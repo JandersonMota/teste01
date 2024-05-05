@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="628.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.Controller">
+
+   <Label minHeight="40.0" prefHeight="40.0" text="Cadastro Contas" VBox.vgrow="NEVER" />
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="Nome Cliente" />
+         <TextField fx:id="txCliente" />
+      </children>
+   </HBox>
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="CPF" />
+         <TextField fx:id="txCpf" />
+      </children>
+   </HBox>
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="Endereço" />
+         <TextField fx:id="txEndereco" />
+      </children>
+   </HBox>
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="Telefone" />
+         <TextField fx:id="txTelefone" />
+      </children>
+   </HBox>
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="Data de nascimento" />
+         <TextField fx:id="txDataDeNascimento" />
+      </children>
+   </HBox>
+   <HBox>
+      <children>
+         <Label minWidth="110.0" text="Descrição" />
+         <TextField fx:id="txDescricao" />
+      </children>
+   </HBox>
+   <Button fx:id="btnAdicionarTutor" onAction="#novaConta" text="Adicionar">
+      <VBox.margin>
+         <Insets />
+      </VBox.margin></Button>
+   <StackPane VBox.vgrow="ALWAYS">
+      <children>
+         <TableView fx:id="tbContas">
+           <columns>
+             <TableColumn fx:id="colCliente" prefWidth="75.0" text="Cliente" />
+             <TableColumn fx:id="colSaldo" prefWidth="75.0" text="Saldo" />
+           </columns>
+         </TableView>
+      </children>
+   </StackPane>
+</VBox>
